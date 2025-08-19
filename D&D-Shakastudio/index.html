@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D&D - Shakastudio</title>
+  <meta name="description" content="Portofolio fotografi profesional: prewedding, produk, event & keluarga." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <img src="assets/logo.jpg" alt="Logo" class="logo">
+        <span>D&D-Shakastudio</span>
+      </a>
+      <button class="menu-toggle" aria-label="Buka menu" onclick="toggleMenu()">☰</button>
+      <nav id="nav" class="nav">
+        <a href="#beranda">Beranda</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="beranda" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Abadikan Momen Berarti Anda</h1>
+          <p>Fotografer profesional untuk prewedding, produk, event, dan keluarga. Kualitas premium, harga transparan.</p>
+          <div class="hero-cta">
+            <a href="#portofolio" class="btn primary">Lihat Portofolio</a>
+            <a href="#kontak" class="btn ghost">Booking Jadwal</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/foto-01.jpg" alt="Contoh karya fotografi">
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO GRID -->
+    <section id="portofolio" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Portofolio Pilihan</h2>
+          <p>Klik foto untuk melihat versi besar.</p>
+        </div>
+        <div class="grid">
+          <img src="assets/foto-01.jpg" alt="Portofolio 1" class="grid-item" onclick="openLightbox(this.src)">
+          <img src="assets/foto-02.jpg" alt="Portofolio 2" class="grid-item" onclick="openLightbox(this.src)">
+          <img src="assets/foto-03.jpg" alt="Portofolio 3" class="grid-item" onclick="openLightbox(this.src)">
+          <img src="assets/foto-04.jpg" alt="Portofolio 4" class="grid-item" onclick="openLightbox(this.src)">
+          <img src="assets/foto-05.jpg" alt="Portofolio 5" class="grid-item" onclick="openLightbox(this.src)">
+          <img src="assets/foto-06.jpg" alt="Portofolio 6" class="grid-item" onclick="openLightbox(this.src)">
+          <img src="assets/foto-07.jpg" alt="Portofolio 7" class="grid-item" onclick="openLightbox(this.src)">
+          <img src="assets/foto-08.jpg" alt="Portofolio 8" class="grid-item" onclick="openLightbox(this.src)">
+          <img src="assets/foto-09.jpg" alt="Portofolio 9" class="grid-item" onclick="openLightbox(this.src)">
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES / PRICING -->
+    <section id="layanan" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Paket Layanan</h2>
+          <p>Pilih paket sesuai kebutuhan. Harga dapat disesuaikan.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Produk</h3>
+            <p>Foto katalog, e-commerce, dan brand campaign.</p>
+            <ul>
+              <li>30 foto terpilih</li>
+              <li>Retouching dasar</li>
+              <li>Pengiriman 3 hari kerja</li>
+            </ul>
+            <div class="price">Mulai Rp1.500.000</div>
+          </article>
+          <article class="card">
+            <h3>Event</h3>
+            <p>Dokumentasi seminar, konser, gathering, dan pernikahan.</p>
+            <ul>
+              <li>Durasi 4–8 jam</li>
+              <li>70+ foto terpilih</li>
+              <li>Highlight 24 jam</li>
+            </ul>
+            <div class="price">Mulai Rp2.500.000</div>
+          </article>
+          <article class="card">
+            <h3>Keluarga</h3>
+            <p>Family & newborn session dengan suasana hangat.</p>
+            <ul>
+              <li>20 foto terpilih</li>
+              <li>Pemotretan 1–2 jam</li>
+              <li>Lokasi indoor/outdoor</li>
+            </ul>
+            <div class="price">Mulai Rp1.200.000</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="tentang" class="section">
+      <div class="container about">
+        <div class="about-photo">
+          <img src="assets/foto-02.jpg" alt="Fotografer">
+        </div>
+        <div class="about-copy">
+          <h2>Tentang Saya</h2>
+          <p>Halo! Saya <strong>Nama Anda</strong>, fotografer berbasis di Indonesia. Saya percaya setiap momen punya cerita, dan tugas saya adalah menjadikannya visual yang tak terlupakan.</p>
+          <p>Peralatan utama: kamera full-frame, lensa prime, dan lighting profesional. Siap untuk proyek komersial maupun personal.</p>
+          <a href="#kontak" class="btn primary">Diskusikan Proyek</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="kontak" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Kontak & Booking</h2>
+          <p>Isi formulir di bawah, atau hubungi langsung via WhatsApp.</p>
+        </div>
+        <form class="form" action="https://formspree.io/f/xldlyebv" method="POST">
+          <div class="form-row">
+            <label>Nama
+              <input type="text" name="nama" placeholder="Nama lengkap" required>
+            </label>
+            <label>Email
+              <input type="email" name="email" placeholder="nama@email.com" required>
+            </label>
+          </div>
+          <label>Pesan / Detail Proyek
+            <textarea name="pesan" rows="5" placeholder="Ceritakan kebutuhanmu..."></textarea>
+          </label>
+          <div class="form-row">
+            <label>Tanggal (opsional)
+              <input type="date" name="tanggal">
+            </label>
+            <label>No. WhatsApp (opsional)
+              <input type="tel" name="whatsapp" placeholder="+62...">
+            </label>
+          </div>
+          <button class="btn primary" type="submit">Kirim</button>
+          <a class="btn ghost" href="https://wa.me/62085711074434" target="_blank" rel="noopener">Chat WhatsApp</a>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot-inner">
+      <p>© <span id="year"></span> D&D-Shakastudio. Semua hak cipta dilindungi.</p>
+      <div class="social">
+        <a aria-label="Instagram" href="#" title="Instagram">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5z" stroke="currentColor" stroke-width="2"/><path d="M12 8a4 4 0 100 8 4 4 0 000-8z" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+        </a>
+        <a aria-label="Facebook" href="#" title="Facebook">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" fill="currentColor"/></svg>
+        </a>
+        <a aria-label="TikTok" href="#" title="TikTok">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M21 8a6 6 0 01-6-6h-3v14a3 3 0 11-3-3" stroke="currentColor" stroke-width="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" alt="preview">
+    <button class="close" aria-label="Tutup">×</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
